@@ -1,0 +1,26 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+.card-service {
+  @apply bg-white shadow-xl rounded-lg pt-5;
+}
+
+.text-service {
+  @apply font-bold text-lg mb-5 text-center text-gray-600;
+}
+
+.text-project {
+  @apply font-bold text-lg mb-5 text-left text-gray-600;
+}
+
+.contact {
+  @apply rounded-md shadow-md p-3 mx-5 text-center text-white;
+}
+
+.footer {
+  @apply px-5 mx-5 text-left text-gray-600;
+}
+
