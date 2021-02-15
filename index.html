@@ -14,21 +14,22 @@
         <!-- Hero section -->
         <div class="relative bg-gray-50 overflow-hidden ">
             <div class="max-w-7xl mx-auto">
-            <div class="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <div class="relative z-50 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-50 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                 <polygon points="50,0 100,0 50,100 0,100" />
                 </svg>
         
                 <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-                <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                <nav id="menu" class="fixed shadow-xl z-auto py-10 rounded-md bg-white flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                     <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                     <div class="flex items-center justify-between w-full md:w-auto">
                         <a href="#">
                         <span class="sr-only">Workflow</span>
-                        <img class="h-8 w-auto sm:h-10" src="public/img/logo.png">
+                        <img class="h-8 w-auto sm:h-10 ml-3" src="public/img/logo.png">
                         </a>
                         <div class="-mr-2 flex items-center md:hidden">
-                        <button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
+                        <button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-50 
+                        focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
                             <span class="sr-only">Open main menu</span>
                             <!-- Heroicon name: outline/menu -->
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -38,14 +39,18 @@
                         </div>
                     </div>
                     </div>
-                    <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                    <a href="#" class="font-medium text-gray-500 hover:text-gray-600">about me</a>
+                    <div class="hidden md:block md:ml-7 md:pr-4 md:space-x-8" id="menu">
+                    <a href="#home" class="font-medium text-gray-500 hover:text-gray-600">home</a>
+                    
+                    <a href="#aboutme" class="font-medium text-gray-500 hover:text-gray-600">about me</a>
         
-                    <a href="#" class="font-medium text-gray-500 hover:text-gray-600">services</a>
+                    <a href="#services" class="font-medium text-gray-500 hover:text-gray-600">services</a>
         
-                    <a href="#" class="font-medium text-gray-500 hover:text-gray-600">projects</a>
+                    <a href="#portfolio" class="font-medium text-gray-500 hover:text-gray-600">portfolio</a>
+
+                    <a href="#say" class="font-medium text-gray-500 hover:text-gray-600">What People Say</a>
         
-                    <a href="#" class="font-medium text-gray-500 hover:text-gray-600">contact</a>
+                    <a href="#contact" class="font-medium text-gray-500 hover:text-gray-600">contact</a>
         
                     </div>
                 </nav>
@@ -61,11 +66,11 @@
                     From: "opacity-100 scale-100"
                     To: "opacity-0 scale-95"
                 -->
-                <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                <div id="home" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                 <div class="rounded-lg shadow-md bg-gray-50 ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
                     <div>
-                        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+                        <img class="h-8 w-auto" src="public/img/logo.png" alt="">
                     </div>
                     <div class="-mr-2">
                         <button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -79,19 +84,19 @@
                     </div>
                     <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                     <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-                        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-600 hover:bg-gray-50" role="menuitem">Product</a>
+                        <a href="#home" class="font-medium text-gray-500 hover:text-gray-600">home</a>
+                    
+                    <a href="#aboutme" class="font-medium text-gray-500 hover:text-gray-600">about me</a>
         
-                        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-600 hover:bg-gray-50" role="menuitem">Features</a>
+                    <a href="#services" class="font-medium text-gray-500 hover:text-gray-600">services</a>
         
-                        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-600 hover:bg-gray-50" role="menuitem">Marketplace</a>
+                    <a href="#projects" class="font-medium text-gray-500 hover:text-gray-600">portfolio</a>
+
+                    <a href="#say" class="font-medium text-gray-500 hover:text-gray-600">How People Say</a>
         
-                        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-600 hover:bg-gray-50" role="menuitem">Company</a>
+                    <a href="#contact" class="font-medium text-gray-500 hover:text-gray-600">contact</a>
                     </div>
-                    <div role="none">
-                        <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-50" role="menuitem">
-                        Log in
-                        </a>
-                    </div>
+                    
                     </div>
                 </div>
                 </div>
@@ -104,12 +109,12 @@
                     <span class="block text-pink-500 xl:inline text-3xl">UI/UX Designer</span>
                     <div class="mt-10 sm:mt-10 sm:flex sm:justify-center lg:justify-start">
                     <div class="rounded-md shadow">
-                        <a href="#" class="font-sans w-full bg-pink-500 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=6285780565142&text&app_absent=0" class="font-sans w-full bg-pink-500 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                         Hire Me
                         </a>
                     </div>
                     <div class="mt-3 sm:mt-0 sm:ml-3">
-                        <a href="#" class="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-black-700 md:py-4 md:text-lg md:px-10">
+                        <a download href="public/img/cv-m-saepul-bahri.png" class="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-black-700 md:py-4 md:text-lg md:px-10">
                         Download CV
                         </a>
                     </div>
@@ -125,7 +130,7 @@
         <!-- end hero section -->
 
         <!-- aboutme section -->
-        <div class="min-w-screen min-h-screen flex items-center p-5 lg:p-10 overflow-hidden relative">
+        <div id="aboutme" class="min-w-screen min-h-screen flex items-center p-5 lg:p-10 overflow-hidden relative">
             
             <div class="w-full rounded bg-gray-50 p-10 lg:p-30 mx-auto text-gray-600 relative md:text-left">
                 <span class="text-2xl tracking-tight font-extrabold  sm:text-2xl md:text-2xl block xl:inline">ABOUT ME</span><br/></h1>
@@ -140,16 +145,14 @@
                     <div class="w-full md:w-1/2 px-10 bg-white shadow-2xl overflow-hidden sm:rounded-lg">
                         <div class="px-10 py-10 sm:px-6">
                             <h1 class="px-1 mt-5 font-extrabold text-3xl mb-3">Hi I'm a UI/UX Designer</h1>
-                            <div class="px-1 text-gray-400 "> ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, 
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div class="px-1 text-gray-400 "> I'm like Concept and I like Design. 
+                                I like the two are combined into one unit. I want to show my mind in tune with what is.
+                                My feelings and my intuition my feelings and my intuition make up something that can be enjoyed by the eyes, 
+                                feelings and thoughts of others. if you want to know me more deeply, let's chat casually through a unique pleasantries...
                             </div>
                             <div class="mt-5 mb-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div class="rounded-md shadow">
-                                    <a href="#" class="font-sans w-full bg-green-600 hover:bg-green-700 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white  md:py-4 md:text-lg md:px-10">
+                                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=6285780565142&text&app_absent=0" class="font-sans w-full bg-green-600 hover:bg-green-700 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white  md:py-4 md:text-lg md:px-10">
                                     WhatsApp
                                     </a>
                                 </div>
@@ -162,7 +165,7 @@
         </div>
         <!-- end aboutme section -->
         <!-- services section -->
-        <section class="py-12">
+        <section class="py-12" id="services">
             <div class="container mx-auto">
                 <div>
                     <h1 class="text-2xl font-black text-gray-600 pb-6 px-6 md:px-12">
@@ -238,7 +241,7 @@
                             </div>
                             <div class="px-4 py-4 md:px-10">
                                 <h1 class="text-service">
-                                    Icon Design
+                                    Instagram Post
                                 </h1>
                                  
                             </div>
@@ -247,7 +250,7 @@
                     <div class="w-full lg:w-1/4  md:px-4 lg:px-6 py-5">
                         <div class="card-service">
                             <div class="items-center">
-                                <img src="public/img/cv.png" alt=""
+                                <img src="public/img/cv-icon.png" alt=""
                                     class="w-32 mx-auto border-white border-8  ">
                             </div>
                             <div class="px-4 py-4 md:px-10">
@@ -264,11 +267,11 @@
         </section>
         <!-- end services section -->
         <!-- projects section -->
-        <section class="py-12">
+        <section class="py-12" id="portfolio">
             <div class="container mx-auto">
                 <div class="text-left">
                     <h1 class="text-2xl font-black text-gray-600 pb-6 px-6 md:px-12">
-                        PROJECTS
+                        PORTFOLIO
                     </h1>
                 </div>
                 <div class="flex flex-wrap px-6">
@@ -344,10 +347,10 @@
         <!-- end projects section -->
 
         <!-- testimonials section -->
-        <div class="container mx-auto">
+        <div class="container mx-auto" id="say">
             <div class="text-left">
                 <h1 class="text-2xl font-black text-gray-600  px-6 md:px-12">
-                    TESTIMONIALS
+                    WHAT PEOPLE SAY
                 </h1>
             </div>
             <div class="mx-auto shadow-2xl content-center w-1/3 md:my-24  rounded-xl overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
@@ -419,7 +422,7 @@
                                 </div>
                             </div>	 
                         </div>
-                        <div class="mx-auto mb-8 mt-2">
+                        <div class="mx-auto mb-8 mt-5">
                             <button 
                             class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
                             x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
@@ -438,17 +441,17 @@
         <!-- end testimonial section -->
 
         <!-- contact section-->
-        <div class="container mx-auto w-2/3 mb-20">
+        <div class="container mx-auto w-2/3 mb-20" id="contact">
             <div class="text-center">
                 <h1 class="text-2xl font-black text-gray-600  px-6 md:px-12 mb-10">
                     CONTACT ME
                 </h1>
             </div>
             <div class="flex">
-                <div class="w-1/4 bg-green-500 contact">WhatsApp</div>
-                <div class="w-1/4 bg-blue-500 contact">Telegram</div>
-                <div class="w-1/4 bg-red-500 contact">Email</div>
-                <div class="w-1/4 bg-pink-500 contact">Dribbble</div>
+                <a href="https://api.whatsapp.com/send/?phone=6285780565142&text&app_absent=0" target="_blank" class="w-1/4 bg-green-500 contact">WhatsApp</a>
+                <a href="https://t.me/haznstudio" target="_blank" class="w-1/4 bg-blue-400 contact">Telegram</a>
+                <a href="https://projects.co.id/public/browse_users/view/85a11f/haznstudio-haznstudio" target="_blank" class="w-1/4 bg-yellow-600 contact">projects.co.id</a>
+                <a href="https://www.sribulancer.com/id/users/bachri95" target="_blank" class="w-1/4 bg-blue-500 contact">Sribulancer</a>
               </div>
         </div>
         <!-- end contact section -->
@@ -463,33 +466,33 @@
                 <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
                    <div class="p-5 w-48 ">
                       <div class="text-xs uppercase text-gray-500 font-medium">design</div>
-                      <a class="my-3 block" href="/#">Figma <span class="text-teal-600 text-xs p-1"></span>
-                    </a><a class="my-3 block" href="/#">Inscape <span class="text-teal-600 text-xs p-1"></span></a
-                        ><a class="my-3 block" href="/#">Adobe XD <span class="text-teal-600 text-xs p-1"></span></a>
-                        <a class="my-3 block" href="/#">Blender <span class="text-teal-600 text-xs p-1"></span></a>
-                        <a class="my-3 block" href="/#">Google Chrome <span class="text-teal-600 text-xs p-1"></span></a> 
+                      <a class="my-3 block" href="#">Figma <span class="text-teal-600 text-xs p-1"></span>
+                    </a><a class="my-3 block" href="#">Inscape <span class="text-teal-600 text-xs p-1"></span></a
+                        ><a class="my-3 block" href="#">Adobe XD <span class="text-teal-600 text-xs p-1"></span></a>
+                        <a class="my-3 block" href="#">Blender <span class="text-teal-600 text-xs p-1"></span></a>
+                        <a class="my-3 block" href="#">Google Chrome <span class="text-teal-600 text-xs p-1"></span></a> 
                    </div>
                    <div class="p-5 w-48 ">
                       <div class="text-xs uppercase text-gray-500 font-medium">web</div>
-                      <a class="my-3 block" href="/#">Youtube <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">Facebook <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">Dribbble <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">Behance <span class="text-teal-600 text-xs p-1"></span></a> 
-                      <a class="my-3 block" href="/#">Pixabay <span class="text-teal-600 text-xs p-1"></span></a> 
-                      <a class="my-3 block" href="/#">Unsplash <span class="text-teal-600 text-xs p-1"></span></a> 
+                      <a class="my-3 block" href="#">Youtube <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">Facebook <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">Dribbble <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">Behance <span class="text-teal-600 text-xs p-1"></span></a> 
+                      <a class="my-3 block" href="#">Pixabay <span class="text-teal-600 text-xs p-1"></span></a> 
+                      <a class="my-3 block" href="#">Unsplash <span class="text-teal-600 text-xs p-1"></span></a> 
                    </div>
                    <div class="p-5 w-48 ">
                       <div class="text-xs uppercase text-gray-500 font-medium">programming</div>
-                      <a class="my-3 block" href="/#">Laravel <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">Codeigniter <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">Bootstrap <span class="text-teal-600 text-xs p-1"></span></a> 
-                      <a class="my-3 block" href="/#">Tailwind CSS <span class="text-teal-600 text-xs p-1"></span></a> 
+                      <a class="my-3 block" href="#">Laravel <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">Codeigniter <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">Bootstrap <span class="text-teal-600 text-xs p-1"></span></a> 
+                      <a class="my-3 block" href="#">Tailwind CSS <span class="text-teal-600 text-xs p-1"></span></a> 
                    </div>
                    <div class="p-5 w-48 ">
                       <div class="text-xs uppercase text-gray-500 font-medium">marketplace</div>
-                      <a class="my-3 block" href="/#">projects.co.id <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">sribulancer.com <span class="text-teal-600 text-xs p-1"></span></a>
-                      <a class="my-3 block" href="/#">freelancer.co.id <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">projects.co.id <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">sribulancer.com <span class="text-teal-600 text-xs p-1"></span></a>
+                      <a class="my-3 block" href="#">freelancer.co.id <span class="text-teal-600 text-xs p-1"></span></a>
                     
                    </div>
                    
@@ -501,25 +504,8 @@
                    md:flex-row max-w-6xl">
                    <div class="mt-2">© Copyright 2021. Hazn Studio All Rights Reserved.</div>
                    <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-                      <a href="/#" class="w-6 mx-1">
-                         <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                            <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                               5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
-                               -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
-                               0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
-                               -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
-                               0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
-                               -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
-                               0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
-                               -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
-                               -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
-                               1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
-                               -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
-                               6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
-                               0.771,-0.67 1.054,-1.093Z"></path>
-                         </svg>
-                      </a>
-                      <a href="/#" class="w-6 mx-1">
+                      
+                      <a href="https://web.facebook.com/msaepulbahri95/" class="w-6 mx-1">
                          <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
                             <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
                                5.373,-12 12,-12c6.627,0 12,5.373
@@ -528,7 +514,7 @@
                                -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
                          </svg>
                       </a>
-                      <a href="/#" class="w-6 mx-1">
+                      <a href="https://www.youtube.com/channel/UC3BzqYlLt0L6ch8dY8VyNWQ" target="_blank" class="w-6 mx-1">
                          <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
                             <g id="Layer_1">
                                <circle id="Oval" cx="12" cy="12" r="12"></circle>
@@ -549,7 +535,7 @@
                             </g>
                          </svg>
                       </a>
-                      <a href="/#" class="w-6 mx-1">
+                      <a href="https://www.linkedin.com/in/hazn-studio-9808b0203/" target="_blank" class="w-6 mx-1">
                          <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
                             <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
                                3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
@@ -567,21 +553,51 @@
                                0.4,1.5l0,4.5l2.9,0Z"></path>
                          </svg>
                       </a>
-                      <a href="/#" class="w-6 mx-1">
-                         <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                            <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
-                               -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
-                               -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
-                               0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
-                               0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
-                               -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
-                         </svg>
-                      </a>
+                      
                    </div>
                 </div>
-             </div>
-           
+            </div>
         </div>
         <!-- end footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+     
+        // Select all links with hashes
+        $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+            ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                scrollTop: target.offset().top
+                }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                } else {
+                   
+                    $target.focus(); // Set focus again
+                };
+                });
+            }
+            }
+        });
+    </script>
     </body>
 </html>
