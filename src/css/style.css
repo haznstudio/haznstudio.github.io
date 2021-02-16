@@ -17,7 +17,7 @@
 }
 
 .contact {
-  @apply rounded-md shadow-md p-3 mx-5 text-center text-white;
+  @apply rounded-md shadow-md p-3 text-center text-white;
 }
 
 .footer {
