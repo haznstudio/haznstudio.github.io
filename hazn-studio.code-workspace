@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../haznstudio.github.io"
 		}
 	],
 	"settings": {}
